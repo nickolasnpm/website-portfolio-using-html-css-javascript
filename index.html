@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Website Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" >
+    
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  
+    <style>
+        #about-me .experience .right-object h6 a:link{
+            color: black;
+            background-color: transparent;
+        }
+        #about-me .experience .right-object h6 a:visited{
+            color: grey;
+            background-color: transparent;
+        }
+    </style>
+
+  </head>
+
+  <body>
+    
+   <section id="banner">
+
+    <div class="logo">
+      <p>NickolasNPM</p>
+    </div>
+
+    <div class="banner-text">
+        <h1><p1>Hi, </p1>I'm Nickolas</h1>
+        <p>Software Developer</p>
+        <div class="banner-btn">
+            <a href="#about-me"><span></span>ABOUT ME</a>
+            <a href="#my-contact"><span></span>MY CONTACT</a>
+        </div>
+    </div>
+
+    <div id="navBar">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>    
+                <li><a href="projects.html">PROJECTS</a></li>    
+                <li><a href="articles.html">ARTICLES</a></li>     
+            </ul>
+        </nav>
+    </div>
+
+    <div id="sideNav">
+      <nav>
+      <ul>
+          <li><a href="#banner">HOME</a></li>    
+          <li><a href="#">PROJECTS</a></li>    
+          <li><a href="#">ARTICLES</a></li>     
+      </ul>
+      </nav>
+    </div>
+
+    <div id="menuBtn">
+      <img src="images/menu.png" id="menu">
+    </div>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn")    
+      var sideNav = document.getElementById("sideNav")    
+      var menu = document.getElementById("menu") 
+      
+      sideNav.style.right = "-250px";
+      
+      menuBtn.onclick = function(){
+          if(sideNav.style.right == "-250px"){
+              sideNav.style.right = "0";
+              menu.src = "images/close.png";
+          }
+          else{
+              sideNav.style.right = "-250px";
+              menu.src = "images/menu.png";
+          }
+      }
+      
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1000,
+        speedAsDuration: true
+      });
+      
+      </script>
+
+   </section>
+
+   <section id="about-me">
+
+    <h3>ABOUT ME</h3>
+
+    <div class="summary">
+      <h5>SUMMARY</h5>
+      <p>
+          I am a food science graduate turned programmer. I worked approximately for two years in the food 
+          industry before I decided to learn programming and eventually landed a job as Digital Instructor in
+          a state-owned training institution. I am actively seeking an opportunity to expand my knowledge
+          and skills in C# and .NET web development while applying standard programming practices to real-world projects.
+      </p>
+    </div>
+
+    <div class="education">
+      <h5>EDUCATION</h5>
+      <ul>
+        <li>
+              <div class="all-object">
+                                
+                  <div class="left-object">
+                      <p><p2>[ </p2>09/2015 - 07/2019<p2> ]</p2></p>
+                  </div>
+                  <div class="right-object">
+                    <h6>Universiti Putra Malaysia, Serdang Campus</h6>
+                    <div class="description">
+                        <div class="emoji">
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="desc_skills">
+                            <p>Bachelor of Science in Food Studies (Food Business)</p>
+                        </div>
+                    </div>
+                  </div>
+                                
+              </div>
+        </li>
+
+        <li>
+            <div class="all-object">
+                
+                <div class="left-object">
+                    <p><p2>[ </p2>05/2014 - 04/2015<p2> ]</p2></p>
+                </div>
+
+                <div class="right-object">
+                    <h6>Sarawak Matriculation College</h6>
+                    <div class="description">
+                        <div class="emoji">
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="desc_skills">
+                            <p>Matriculation Certificate: Pure Science (Module 1)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h5>WORK EXPERIENCE</h5>
+      <ul>
+        <li>
+            <div class="all-object">
+                
+                <div class="left-object">
+                    <p><p2>[ </p2>07/2022 - Current<p2> ]</p2></p>
+                </div>
+
+                <div class="right-object">
+                    <h6>Training Instructor <a href="https://www.centex-sarawak.my/site/" target="_blank">@ Centre For Technology Excellence, Sarawak</a></h6>
+                    <div class="description">
+                        <div class="emoji">
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="desc_skills">
+                            <p><b>Responsibilities : </b>Assist the Main Instructor to conduct classes and tutorials mainly 
+                                in Digital Marketing and Android Mobile Application Development.</p>
+                                <p><b>Skills Gained : </b>Teaching, Digital Marketing, Android Development, Web Development</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+
+        <li>
+          <div class="all-object">
+              
+              <div class="left-object">
+                  <p><p2>[ </p2>04/2021 - 04/2022<p2> ]</p2></p>
+              </div>
+
+              <div class="right-object">
+                  <h6>Content Writer [Freelance] <a href="https://internews.org/" target="_blank">@ Internews Network, Malaysia</a></h6>
+                  <div class="description">
+                      <div class="emoji">
+                          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      </div>
+                      <div class="desc_skills">
+                          <p><b>Responsibilities : </b>Researched, developed, and produced monthly reports and articles 
+                              related to the impact of the Covid-19 pandemic on socioeconomic inequality in Malaysia.</p>
+                          <p><b>Skills Gained : </b>Research, Content Development</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="all-object">
+              
+              <div class="left-object">
+                  <p><p2>[ </p2>01/2022 - 02/2022<p2> ]</p2></p>
+              </div>
+
+              <div class="right-object">
+                  <h6>Associate Researcher [Freelance] <a href="https://obresearch.co/" target="_blank">@ Owl & Badger Research</a></h6>
+                  <div class="description">
+                      <div class="emoji">
+                          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      </div>
+                      <div class="desc_skills">
+                          <p><b>Responsibilities : </b>Planned, prepared, and organized a focus group discussion involving 
+                              200 youth respondents throughout Sarawak to understand the importance and potential for their 
+                              participation in the state political discourse.</p>
+                          <p><b>Skills Gained : </b>Research, Event Management</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="all-object">
+              
+              <div class="left-object">
+                  <p><p2>[ </p2>07/2021 - 10/2021<p2> ]</p2></p>
+              </div>
+
+              <div class="right-object">
+                  <h6>Content Researcher [Freelance] <a href="https://www.yayasantar.org.my/" target="_blank">@ Tunku Abdul Rahman Foundation</a></h6>
+                  <div class="description">
+                      <div class="emoji">
+                          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      </div>
+                      <div class="desc_skills">
+                          <p><b>Responsibilities : </b>Conducted topic research and SEO keyword research for a 
+                              to-be-developed website about post-secondary education pathways and funding opportunities 
+                              for Malaysian students.</p>
+                          <p><b>Skills Gained : </b>Research, Content Development</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="all-object">
+              
+              <div class="left-object">
+                  <p><p2>[ </p2>09/2019 - 12/2020<p2> ]</p2></p>
+              </div>
+
+              <div class="right-object">
+                  <h6>Restaurant Management Trainee <a href="https://kingdomfood.sg/" target="_blank">@ Kingdom Food Group, Singapore</a></h6>
+                  <div class="description">
+                      <div class="emoji">
+                          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      </div>
+                      <div class="desc_skills">
+                          <p><b>Responsibilities : </b>Assisted the Restaurant Branch Manager in leading a multi-national team 
+                              of 20 members and managing daily restaurant operations in two branches at AMK Hub, Ang Mo Kio, 
+                              and Grantral Mall, Clementi.</p>
+                          <p><b>Skills Gained : </b>Food & Beverage, Restaurant Management</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+        </li>
+
+        <li>
+          <div class="all-object">
+              
+              <div class="left-object">
+                  <p><p2>[ </p2>02/2019 - 07/2019<p2> ]</p2></p>
+              </div>
+
+              <div class="right-object">
+                  <h6>Research Intern <a href="http://www.halal.upm.edu.my/" target="_blank">@ Halal Products Research Institute</a></h6>
+                  <div class="description">
+                      <div class="emoji">
+                          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                      </div>
+                      <div class="desc_skills">
+                          <p><b>Responsibilities : </b>Assisted in conducting pilot research on Muslim consumers’ awareness 
+                              of and initial response to cell-based meat;</p>
+                          <p><b>Skills Gained : </b>Research, Consumer Behaviors</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+        </li>
+
+      </ul>               
+    </div>
+
+   </section>
+
+   <section id="my-contact">
+
+    <h3>CONTACT ME</h3>
+
+    <div class="social-icons">
+        <ul>
+          <li> <a href="https://www.facebook.com/nickolaspiusmatu" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li> <a href="https://twitter.com/nickolasnpm_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li> <a href="https://www.linkedin.com/in/nickolaspiusmatu/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li> <a href="https://github.com/nickolasnpm" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></i></a></li>
+          <li> <a href="mailto:nickolasnpm.work@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="copy-right">
+        <p>&copy; NickolasNPM 2023</p>
+    </div>
+
+   </section>
+
+  </body>
+
+</html>
